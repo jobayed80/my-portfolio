@@ -12,8 +12,15 @@ import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatingDiv from '../FloatingDiv/FloatingDiv'
+import { motion } from 'framer-motion'
+
+
 
 const Intro = () => {
+    // Transition
+  const transition = { duration: 2, type: "spring" };
+
+
     return (
         <div className="intro">
             <div className="i-left">
@@ -49,10 +56,11 @@ const Intro = () => {
                 <img src={Vector1} alt="" />
                 <img src={Vector2} alt="" />
                 <img src={boy} alt="" />
-
+ 
                 <div style={{top:"-4%" , left:"68%"}}>
                     <FloatingDiv image={crown} txt1="Web" txt2="Developer"/>
                 </div>
+            
                 <div style={{top:"17rem" , left:"-3rem"}}>
                     <FloatingDiv image={thumbup} txt1="MERN Stack" txt2="Web Developer(Learning)"/>
                 </div>
